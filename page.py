@@ -50,7 +50,7 @@ def streamlitShow(X_train, y_train, logistic_regression, random_forest_classifie
         prediction_probabilities = model.predict_proba(user_input_data)
 
         # Display the predicted value as text
-        st.markdown("<h3 style='color:white; font-size: 30px; font-weight: normal; text-align: center;'>Based on the provided features, the prediction is: </h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='color:white; font-size: 30px; font-weight: normal; text-align: center;'>Based on the provided features, the prediction is that: </h3>", unsafe_allow_html=True)
         if prediction[0] == 1:
             set_color_text('lime', 'You are going to attend')
         else:
